@@ -10,23 +10,23 @@
 
 <body class="bg-gray-200">
     <section class="">
-        <h1 class="text-center text-5xl font-bold text-blue-950 my-10">Products Menu</h1>
+        <h1 class="text-center text-5xl font-bold text-blue-950 my-10">Products Menu</h1> 
         <div
             class="flex justify-center *:transition-all text-xl mb-14 gap-x-2 *:border-b-gray-600 *:border-e-gray-600 *:shadow *:shadow-yellow-600 *:border-2 *:border-yellow-700 *:px-3 *:rounded-md *:text-yellow-700">
-            <button type="button" class="hover:bg-yellow-700 hover:text-white">All</button>
-            <button type="button" class="hover:bg-yellow-700 hover:text-white">Breakfast</button>
-            <button type="button" class="hover:bg-yellow-700 hover:text-white">Lunch</button>
-            <button type="button" class="hover:bg-yellow-700 hover:text-white">Shakes</button>
-            <button type="button" class="hover:bg-yellow-700 hover:text-white">Dinner</button>
+            <button type="button" class="hover:bg-yellow-700 hover:text-white" data-tab="all">All</button>
+            <button type="button" class="hover:bg-yellow-700 hover:text-white" data-tab="breakfast">Breakfast</button>
+            <button type="button" class="hover:bg-yellow-700 hover:text-white" data-tab="lunch">Lunch</button>
+            <button type="button" class="hover:bg-yellow-700 hover:text-white" data-tab="shakes">Shakes</button>
+            <button type="button" class="hover:bg-yellow-700 hover:text-white" data-tab="dinner">Dinner</button>
         </div>
         <div class="grid grid-cols-2 w-11/12 mx-auto gap-10">
-            <div class="grid gap-x-5 grid-cols-5 product">
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="breakfast">
                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-1.jpeg" alt="pancake"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Buttermilk Pancakes</h2>
-                        <h2>$15.99</h2>
+                        <h2 class="text-yellow-700">$15.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">If all the sweetness in this home were a dish,
@@ -34,13 +34,13 @@
                         golden syrup and nature's berries cascading from the top.</p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
-                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-2.jpeg" alt="pancake"
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="dinner">
+                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-2.jpeg" alt="pancake"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Dinner Double</h2>
-                        <h2>$13.99</h2>
+                        <h2 class="text-yellow-700">$13.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">vaporware iPhone mumblecore selvage raw denim
@@ -48,13 +48,13 @@
                     </p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
-                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-3.jpeg" alt="milkshake"
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="shakes">
+                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-3.jpeg" alt="milkshake"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Godzilla Milkshake</h2>
-                        <h2>$6.99</h2>
+                        <h2 class="text-yellow-700">$6.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">Another reason for milkshakes' popularity is
@@ -62,13 +62,13 @@
                         icy and refreshing.</p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="breakfast">
                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-4.jpeg" alt="milkshake"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Country Delight</h2>
-                        <h2>$20.99</h2>
+                        <h2 class="text-yellow-700">$20.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">Shabby chic keffiyeh neutra snackwave pork belly
@@ -76,13 +76,13 @@
                     </p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
-                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-5.jpeg" alt="burger"
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="lunch">
+                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-5.jpeg" alt="burger"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Egg Attack</h2>
-                        <h2>$22.99</h2>
+                        <h2 class="text-yellow-700">$22.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">That, combined with the yolk's creaminess,
@@ -90,13 +90,13 @@
                         weighed 3,591 pounds.</p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
-                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-6.jpeg" alt="burger"
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="shakes">
+                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-6.jpeg" alt="burger"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Oreo Dream</h2>
-                        <h2>$18.99</h2>
+                        <h2 class="text-yellow-700">$18.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">You can definitely up the Oreo factor and start
@@ -104,13 +104,13 @@
                         the milk, the tastier the milkshake.</p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="breakfast">
                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-7.jpeg" alt="bacon"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Bacon Overflow</h2>
-                        <h2>$8.99</h2>
+                        <h2 class="text-yellow-700">$8.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">Combine ground beef, onion, bacon,
@@ -118,13 +118,13 @@
                         Shape the ground beef mixture into 6 equal size burgers.</p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
-                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-8.jpeg" alt="bacon"
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="lunch">
+                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-8.jpeg" alt="bacon"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>American Classic</h2>
-                        <h2>$12.99</h2>
+                        <h2 class="text-yellow-700">$12.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">on it tumblr kickstarter thundercats migas
@@ -132,13 +132,13 @@
                     </p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
-                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-9.jpeg" alt="shake"
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="shakes">
+                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-9.jpeg" alt="shake"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Quarantine Buddy</h2>
-                        <h2>$16.99</h2>
+                        <h2 class="text-yellow-700">$16.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">skateboard fam synth authentic semiotics.
@@ -146,13 +146,13 @@
                     </p>
                 </div>
             </div>
-            <div class="grid gap-x-5 grid-cols-5 product">
-                <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-10.jpeg" alt="shake"
+            <div class="grid gap-x-5 grid-cols-5 product" data-category="dinner">
+                 <img src="https://vanilla-js-basic-project-8-menu.netlify.app/images/item-10.jpeg" alt="shake"
                     class="col-span-2 h-40 object-cover w-60 border-4 rounded-md border-yellow-600">
                 <div class="col-span-3">
                     <div class="flex justify-between font-semibold text-lg tracking-widest">
                         <h2>Steak Dinner</h2>
-                        <h2>$39.99</h2>
+                        <h2 class="text-yellow-700">$39.99</h2>
                     </div>
                     <hr class="border-dotted border-black my-3">
                     <p class="text-justify font-medium text-gray-600">skateboard fam synth authentic semiotics.
